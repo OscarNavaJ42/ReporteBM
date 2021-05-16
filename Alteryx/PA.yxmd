@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>442D5C1D10BDED0F14A23572175AF88A08601B9216D655D1B7AEFF04A3C572975489590E612149FA073084907143659A0</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__|||select participantes.id,
+	participantes.Marcatemporal,
+	participantes.Nombre,
+	participantes.Perfil,
+	respuestasvene21.Nombre as Nombre1,
+	respuestasvene21.Pregunta1,
+	respuestasvene21.Pregunta2,
+	respuestasvene21.Pregunta4,
+	respuestasvene21.Pregunta3,
+	respuestasvene21.Pregunta7,
+	respuestasvene21.Pregunta6,
+	respuestasvene21.Pregunta5,
+	respuestasvene21.Pregunta8,
+	respuestasvene21.Pregunta9,
+	respuestasvene21.AfB,
+	respuestasvene21.AfTI,
+	respuestasvene21.AfDS 
+from participantes 
+	inner join respuestasvene21 on respuestasvene21.Nombre = participantes.Nombre</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Prueba1
+Query=select participantes.id,
+	p...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="Int32" />
+            <Field name="Marcatemporal" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="DateTime" />
+            <Field name="Nombre" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Perfil" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Nombre1" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta1" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta2" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta4" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta3" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta7" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta6" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta5" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta8" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Pregunta9" size="254" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="V_String" />
+            <Field name="AfB" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="Int32" />
+            <Field name="AfTI" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="Int32" />
+            <Field name="AfDS" source="File: odbc:DSN=Prueba1;UID=root;PWD=__EncPwd1__" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\onava\AppData\Local\Temp\Engine_6648_d74d1b435d2848109cb88e93e6bccf14_\Engine_18608_ed441d72e43945228aa3de24fbeeafc4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeMonth([Marcatemporal])" field="mes" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[mes = DateTimeMonth([Marcatemporal])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="510" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="mes" action="GroupBy" rename="mes" />
+            <SummarizeField field="Perfil" action="GroupBy" rename="Perfiles" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="774" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Perfiles" action="Count" rename="PerfilesN" />
+            <SummarizeField field="mes" action="GroupBy" rename="mes" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\onava\AppData\Local\Temp\Engine_6648_d74d1b435d2848109cb88e93e6bccf14_\Engine_18608_fe736dc6564b471db1d3bd99779718a1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\onava\AppData\Local\Temp\Engine_6648_d74d1b435d2848109cb88e93e6bccf14_\Engine_18608_9e06fec72c624e49a14cdabde3794bc7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="54" MaxRecords="">G:\Mi unidad\Personalia\Otros\Reporte\Alteryx\PA.json</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PA.json</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="414" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>layer 0</name>
+              <xsrc>Perfil</xsrc>
+              <transforms json:Array="true">
+                <type>groupby</type>
+                <groupssrc>Perfil</groupssrc>
+                <groups>Data Scientist</groups>
+                <groups>Ambiguo</groups>
+                <groups>NA</groups>
+                <groups>Business</groups>
+                <groups>Business</groups>
+                <groups>Business</groups>
+                <groups>Data Scientist</groups>
+                <groups>Business</groups>
+                <groups>Ambiguo</groups>
+                <groups>Ambiguo</groups>
+                <groups>NA</groups>
+                <groups>NA</groups>
+                <groups>Business</groups>
+                <groups>Business</groups>
+                <groups>Ambiguo</groups>
+                <groups>Data Scientist</groups>
+                <groups>Ambiguo</groups>
+                <groups>Business</groups>
+                <groups>Ambiguo</groups>
+                <groups>Business</groups>
+                <groups>Ambiguo</groups>
+                <groups>Business</groups>
+                <groups>TI</groups>
+                <groups>Business</groups>
+                <groups>TI</groups>
+                <groups>TI</groups>
+                <groups>Data Scientist</groups>
+                <groups>TI</groups>
+                <groups>Ambiguo</groups>
+                <groups>NA</groups>
+                <groups>TI</groups>
+                <groups>Ambiguo</groups>
+                <groups>Ambiguo</groups>
+                <groups>Data Scientist</groups>
+                <groups>Ambiguo</groups>
+                <groups>Ambiguo</groups>
+                <groups>Ambiguo</groups>
+                <groups>Business</groups>
+              </transforms>
+              <orientation>v</orientation>
+              <decreasing>
+                <line>
+                  <color>#7f7f7f</color>
+                </line>
+                <fillcolor>rgba(127, 127, 127, 0.5)</fillcolor>
+              </decreasing>
+              <increasing>
+                <line>
+                  <color>#17becf</color>
+                </line>
+                <fillcolor>rgba(23, 190, 207, 0.5)</fillcolor>
+              </increasing>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>2020-06-24 13:43:24.4006</range>
+                <range>2021-07-02 23:23:10.2858</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Perfil</text>
+                </title>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>0.6606592972400871</range>
+                <range>16.088904663473834</range>
+                <autorange>false</autorange>
+              </yaxis>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>PA</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

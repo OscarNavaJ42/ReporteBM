@@ -5,6 +5,10 @@ Chart.defaults.global.defaultFontColor = '#858796';
 
 // lectura de datos
 console.log(String(MisDatos))
+
+$.getJSON("web/js/resultados/PA.json", function(json) {
+  console.log(json); // this will show the info it in firebug console
+});
 // var as = JSON.parse(jstring);
 
 // 
